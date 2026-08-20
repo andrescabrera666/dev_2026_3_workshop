@@ -1,5 +1,7 @@
 class Conversion:
     def celsius_a_fahrenheit(self, celsius):
+
+        
         """
         Convierte temperatura de Celsius a Fahrenheit.
         
@@ -15,9 +17,9 @@ class Conversion:
             celsius_a_fahrenheit(0) -> 32.0
             celsius_a_fahrenheit(100) -> 212.0
         """
-        pass
-    
-    def fahrenheit_a_celsius(self, fahrenheit):
+        return (celsius * 9/5) + 32
+
+def fahrenheit_a_celsius(self, fahrenheit):
         """
         Convierte temperatura de Fahrenheit a Celsius.
         
@@ -35,7 +37,7 @@ class Conversion:
         """
         pass
     
-    def metros_a_pies(self, metros):
+def metros_a_pies(self, metros):
         """
         Convierte distancia de metros a pies.
         
@@ -52,7 +54,7 @@ class Conversion:
         """
         pass
     
-    def pies_a_metros(self, pies):
+def pies_a_metros(self, pies):
         """
         Convierte distancia de pies a metros.
         
@@ -69,7 +71,7 @@ class Conversion:
         """
         pass
     
-    def decimal_a_binario(self, decimal):
+def decimal_a_binario(self, decimal):
         """
         Convierte un número decimal a su representación binaria.
         
@@ -85,7 +87,7 @@ class Conversion:
         """
         pass
     
-    def binario_a_decimal(self, binario):
+def binario_a_decimal(self, binario):
         """
         Convierte un número binario a decimal.
         
@@ -101,7 +103,7 @@ class Conversion:
         """
         pass
     
-    def decimal_a_romano(self, numero):
+def decimal_a_romano(self, numero):
         """
         Convierte un número decimal a numeración romana.
         
@@ -117,7 +119,7 @@ class Conversion:
         """
         pass
     
-    def romano_a_decimal(self, romano):
+def romano_a_decimal(self, romano):
         """
         Convierte un número romano a decimal.
         
@@ -133,7 +135,7 @@ class Conversion:
         """
         pass
     
-    def texto_a_morse(self, texto):
+def texto_a_morse(self, texto):
         """
         Convierte texto a código Morse.
         
@@ -149,7 +151,7 @@ class Conversion:
         """
         pass
     
-    def morse_a_texto(self, morse):
+def morse_a_texto(self, morse):
         """
         Convierte código Morse a texto.
         

@@ -1,15 +1,18 @@
 class Conversion:
-
     def celsius_a_fahrenheit(self, celsius):
-        return (celsius * 9 / 5) + 32
+        """
+        Convierte temperatura de Celsius a Fahrenheit.
 
+        Args:
+            celsius (float): Temperatura en grados Celsius
 
+        Returns:
+            float: Temperatura en grados Fahrenheit
 
-conversion = Conversion()
+        Fórmula: F = (C x 9/5) + 32
 
-# Probar las conversiones
-print(conversion.celsius_a_fahrenheit(0))
-print(conversion.celsius_a_fahrenheit(100))
-print(conversion.celsius_a_fahrenheit(37))
-print(conversion.celsius_a_fahrenheit(-273.15))
-print(conversion.celsius_a_fahrenheit(25.5))
+        Ejemplo:
+            celsius_a_fahrenheit(0) -> 32.0
+            celsius_a_fahrenheit(100) -> 212.0
+        """
+        return (celsius * 9/5) + 32
