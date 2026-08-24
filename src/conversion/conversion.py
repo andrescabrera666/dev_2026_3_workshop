@@ -20,7 +20,9 @@ class Conversion:
         """
     pass
 
-def fahrenheit_a_celsius(self, fahrenheit):
+def fahrenheit_a_celsius(self, fahrenheit:float):
+        return (fahrenheit - 32) *5 / 9     
+            
         """
         Convierte temperatura de Fahrenheit a Celsius.
         
