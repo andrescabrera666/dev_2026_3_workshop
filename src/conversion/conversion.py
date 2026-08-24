@@ -76,7 +76,7 @@ class Conversion:
         """
         return pies * 0.3048
     
-def decimal_a_binario(self, decimal):
+    def decimal_a_binario(self, decimal):
         """
         Convierte un número decimal a su representación binaria.
         
@@ -90,7 +90,17 @@ def decimal_a_binario(self, decimal):
             decimal_a_binario(10) -> "1010"
             decimal_a_binario(255) -> "11111111"
         """
-        pass
+        if decimal == 0:
+            return "0"
+
+        binario = ""
+
+        while decimal > 0:
+            residuo = decimal % 2
+            binario = str(residuo) + binario
+            decimal = decimal // 2
+
+        return binario
     
 def binario_a_decimal(self, binario):
         """
