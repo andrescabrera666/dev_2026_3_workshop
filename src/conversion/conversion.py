@@ -59,7 +59,7 @@ class Conversion:
        
        
     
-def pies_a_metros(self, pies):
+    def pies_a_metros(self, pies):
         """
         Convierte distancia de pies a metros.
         
@@ -74,7 +74,7 @@ def pies_a_metros(self, pies):
         Ejemplo:
             pies_a_metros(3.28084) -> 1.0
         """
-        pass
+        return pies * 0.3048
     
 def decimal_a_binario(self, decimal):
         """
