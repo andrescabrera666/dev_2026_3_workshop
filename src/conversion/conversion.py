@@ -18,12 +18,12 @@ class Conversion:
             celsius_a_fahrenheit(0) -> 32.0
             celsius_a_fahrenheit(100) -> 212.0
         """
-    pass
+   
 
-def fahrenheit_a_celsius(self, fahrenheit:float):
-        return (fahrenheit - 32) *5 / 9     
-            
-        """
+def fahrenheit_a_celsius(self, fahrenheit):
+         return (fahrenheit - 32) * 5/9 
+         
+         """
         Convierte temperatura de Fahrenheit a Celsius.
         
         Args:
@@ -38,9 +38,10 @@ def fahrenheit_a_celsius(self, fahrenheit:float):
             fahrenheit_a_celsius(32) -> 0.0
             fahrenheit_a_celsius(212) -> 100.0
         """
-        pass
+       
     
 def metros_a_pies(self, metros):
+        return metros * 3.28084
         """
         Convierte distancia de metros a pies.
         
@@ -55,7 +56,8 @@ def metros_a_pies(self, metros):
         Ejemplo:
             metros_a_pies(1) -> 3.28084
         """
-        pass
+       
+       
     
 def pies_a_metros(self, pies):
         """
