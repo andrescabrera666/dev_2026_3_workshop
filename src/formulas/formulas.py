@@ -113,7 +113,7 @@ class Formulas:
         Ejemplo:
             energia_potencial(2, 5) -> 98.0
         """
-        pass
+        return masa * gravedad * altura
 
     def ley_ohm_voltaje(self, corriente, resistencia):
         """
