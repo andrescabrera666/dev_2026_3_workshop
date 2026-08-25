@@ -149,7 +149,7 @@ class Formulas:
         Ejemplo:
             ley_ohm_corriente(10, 5) -> 2.0
         """
-        pass
+        return voltaje / resistencia
 
     def interes_simple(self, capital, tasa, tiempo):
         """
