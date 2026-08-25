@@ -183,7 +183,7 @@ class Conversion:
 
         return total
     
-def texto_a_morse(self, texto):
+    def texto_a_morse(self, texto):
         """
         Convierte texto a código Morse.
         
@@ -197,7 +197,52 @@ def texto_a_morse(self, texto):
             texto_a_morse("SOS") -> "... --- ..."
             texto_a_morse("HELLO") -> ".... . .-.. .-.. ---"
         """
-        pass
+        morse = {
+        "A": ".-",
+        "B": "-...",
+        "C": "-.-.",
+        "D": "-..",
+        "E": ".",
+        "F": "..-.",
+        "G": "--.",
+        "H": "....",
+        "I": "..",
+        "J": ".---",
+        "K": "-.-",
+        "L": ".-..",
+        "M": "--",
+        "N": "-.",
+        "O": "---",
+        "P": ".--.",
+        "Q": "--.-",
+        "R": ".-.",
+        "S": "...",
+        "T": "-",
+        "U": "..-",
+        "V": "...-",
+        "W": ".--",
+        "X": "-..-",
+        "Y": "-.--",
+        "Z": "--..",
+        "0": "-----",
+        "1": ".----",
+        "2": "..---",
+        "3": "...--",
+        "4": "....-",
+        "5": ".....",
+        "6": "-....",
+        "7": "--...",
+        "8": "---..",
+        "9": "----."
+        }
+
+        resultado = []
+
+        for letra in texto.upper():
+            if letra in morse:
+                resultado.append(morse[letra])
+
+        return " ".join(resultado)
     
 def morse_a_texto(self, morse):
         """
