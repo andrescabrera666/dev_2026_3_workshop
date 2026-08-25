@@ -50,7 +50,20 @@ class Data:
         Returns:
             list: Lista sin elementos duplicados
         """
-        pass
+        resultado = []
+
+        for elemento in lista:
+            repetido = False
+
+            for existente in resultado:
+                if elemento == existente and type(elemento) == type(existente):
+                    repetido = True
+                    break
+
+            if not repetido:
+                resultado.append(elemento)
+
+        return resultado
     
     def merge_ordenado(self, lista1, lista2):
         """
