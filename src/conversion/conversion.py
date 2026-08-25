@@ -118,7 +118,7 @@ class Conversion:
         """
         return int(binario,2)
     
-def decimal_a_romano(self, numero):
+    def decimal_a_romano(self, numero):
         """
         Convierte un número decimal a numeración romana.
         
@@ -132,7 +132,17 @@ def decimal_a_romano(self, numero):
             decimal_a_romano(9) -> "IX"
             decimal_a_romano(1994) -> "MCMXCIV"
         """
-        pass
+        miles = ["", "M", "MM", "MMM"]
+        centenas = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+        decenas = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+        unidades = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+
+        return (
+            miles[numero // 1000]
+            + centenas[(numero % 1000) // 100]
+            + decenas[(numero % 100) // 10]
+            + unidades[numero % 10]
+    )
     
 def romano_a_decimal(self, romano):
         """
