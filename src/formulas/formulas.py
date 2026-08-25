@@ -94,7 +94,7 @@ class Formulas:
         Ejemplo:
             energia_cinetica(2, 3) -> 9.0
         """
-        pass
+        return (1 / 2) * masa * velocidad ** 2
 
     def energia_potencial(self, masa, altura, gravedad=9.8):
         """
