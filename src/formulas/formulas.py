@@ -168,7 +168,7 @@ class Formulas:
         Ejemplo:
             interes_simple(1000, 0.05, 2) -> 100.0
         """
-        pass
+        return capital * tasa * tiempo
 
     def interes_compuesto(self, capital, tasa, tiempo, n=1):
         """
