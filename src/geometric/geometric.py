@@ -321,7 +321,7 @@ class Geometria:
         Returns:
             tuple: Coordenadas (x, y) del punto medio
         """
-        pass
+        return ((x1 + x2) / 2, (y1 + y2) / 2)
     
     def pendiente_recta(self, x1, y1, x2, y2):
         """
