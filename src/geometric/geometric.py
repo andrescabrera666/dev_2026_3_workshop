@@ -268,7 +268,12 @@ class Geometria:
         Returns:
             float: Volumen del cilindro
         """
-        pass
+        if radio < 0 or altura < 0:
+            return 0 
+
+        pi = 3.141592653589793
+        return pi * radio * radio * altura
+        
     
     def area_superficie_cilindro(self, radio, altura):
         """
