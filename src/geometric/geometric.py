@@ -29,18 +29,23 @@ class Geometria:
             float: Perímetro del rectángulo
         """
         return 2 * (base + altura)
-    
-    def area_circulo(self, radio:float):
+
+    def area_circulo(self, radio):
         """
         Calcula el área de un círculo.
         
         Args:
-            radio (float): Radio del círculo
+        radio (float): Radio del círculo
             
         Returns:
-            float: Área del círculo
+        float: Área del círculo
         """
-        return math.pi * (radio ** 2)
+        if radio < 0:
+            return 0 
+
+        pi = 3.141592653589793
+        resultado = pi * radio * radio
+        return resultado    
     
     def perimetro_circulo(self, radio):
         """
